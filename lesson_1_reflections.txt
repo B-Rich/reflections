@@ -41,13 +41,10 @@ used "git clone https://github.com/udacity/pappu-pakia.git" when under
 called "pappu-pakia", which contains some game stuff.
 
 
-git config --global core.editor "mate -w"
+git config --global core.editor "/Applications/Emacs.app/Contents/MacOS/Emacs"
+janicerichards (master *+) reflections $ git config --global push.default upstream
+janicerichards (master *+) reflections $ git config --global merge.conflictsytle diff3
 
-git config --global core.editor "emc -w"
-
-git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
-git config --global push.default upstream
-git config --global merge.conflictstyle diff3
 
 Now that you have your workspace set up, what do you want to try using
 Git for?
