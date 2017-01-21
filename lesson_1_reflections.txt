@@ -1,0 +1,54 @@
+How did viewing a diff between two versions of a file help you see the
+bug that was introduced?
+answer: it showed the differences.
+
+How could having easy access to the entire history of a file make you
+a more efficient programmer in the long term?
+answer: don't need to continually save all old(er) versions of the
+files.
+Also, you can easily revert to the previous version, if what you've
+done doesn't work.
+
+What do you think are the pros and cons of manually choosing when to
+create a commit, like you do in Git, vs having versions automatically
+saved, like Google Docs does?
+pro Google Docs, is that it's automatic in case you forget to commit
+con Google Docs, is that commits will be too numerous and won't have a
+single logical reason for that save.
+
+Why do you think some version control systems, like Git, allow saving
+multiple files in one commit, while others, like Google Docs, treat
+each file separately?
+b/c google docs deals with single documents, not multiple documents
+that are interrelated.
+
+How can you use the commands git log and git diff to view the history
+of files?
+use git log to see all commits, which includes id, data, and general
+message, and maybe also a list of changed files
+use git diff to see all the actual changes within the various
+(changed) files, between 2 different commits.
+
+How might using version control make you more confident to make
+changes that could break something?
+b/c you can just do "git log" to find the (just one below) previous
+version (commit) ID, then do "git checkout <previousOkVersionID> to
+restore your files to that good previous version.
+
+
+used "git clone https://github.com/udacity/pappu-pakia.git" when under
+<home>/version-control/reflections.  A subdirectory was created here
+called "pappu-pakia", which contains some game stuff.
+
+
+git config --global core.editor "mate -w"
+
+git config --global core.editor "emc -w"
+
+git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+Now that you have your workspace set up, what do you want to try using
+Git for?
+MY U-M GITLAB STUFF .... and to help me showcase my work, to get a JOB
