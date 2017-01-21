@@ -1,0 +1,21 @@
+What happens when you initialize a repository? Why do you need to do
+it?
+A hidden .git subdirectory is created.  You need to do it, to begin to
+track files/commits.  After saying git status, it will say "initial
+commit", but no files are actually tracked yet, and there is actually
+0 commits!
+
+How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+Once files have been added to the staging area, they can be
+committed.  This is useful if you are probably only going to make
+changes to those files (staged), to keep logical changes more
+obvious.(?)
+
+
+git config --global core.editor "/Applications/Emacs.app/Contents/MacOS/Emacs"
+janicerichards (master *+) reflections $ git config --global push.default upstream
+janicerichards (master *+) reflections $ git config --global merge.conflictsytle diff3
+
+
+
