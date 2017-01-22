@@ -18,4 +18,39 @@ janicerichards (master *+) reflections $ git config --global push.default upstre
 janicerichards (master *+) reflections $ git config --global merge.conflictsytle diff3
 
 
+How can you use the staging area to make sure you have one commit per
+logical change?
+Use "git add <filename>" to just add the one file changed (which
+possibly translates to a single logical change), so that one change
+can be a separate version (or "commit") separate from the others.  (Do
+the "git commit" cmd after doing the "git add <file>" command.
 
+What are some situations when branches would be helpful in keeping
+your history organized? How would branches help?
+To see which experimental behaviors have been tried, and also to have
+secondary versions, that may be useful to have in some cases.  One way
+a branch is useful, is to see a history of which ideas have been tried
+(possibly unsuccessfully)
+
+How do the diagrams help you visualize the branch structure?
+to know at what point in the master branch, different side branches
+were created ... important, b/c you may want to merge some of the
+later master-branch changes into the (earlier) side branches.
+
+What is the result of merging two branches together? Why do we
+represent it in the diagram the way we do?
+To add in subsequent changes that have since been added to the
+master-branch, into the (most recent) side branch tip.  Its
+represented still by two branches that meet at the tip, b/c we still
+want to preserve the child-parent order.
+
+What are the pros and cons of Git’s automatic merging vs. always doing
+merges manually?
+Git's automatic merging pro is that it could potentially save ALOT of
+time over going through and manually adding/subtracting changes.  The
+con is that the changes could possibly be wrong, or if there are
+obvious conflicts, you must change them manually.  Pro to doing things
+manually, is you will probably understand the code (unlike the
+automatic merging process), so less likely to make obvious logical
+mistakes merging the code.  The con to manual merging, is that it
+would take ALOT longer, and of course human error/typos.
